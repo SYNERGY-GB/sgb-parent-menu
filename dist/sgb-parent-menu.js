@@ -10,7 +10,7 @@ angular.module('sgb-parent-menu', ['megazord'])
         $scope.navBarSide = _screenParams.side?_screenParams.side:'right';
         $scope.navBarHeaderColor = _screenParams.headerColor?_screenParams.headerColor:'defaultHeaderColor';
         $scope.backViews = _screenParams.backview?_screenParams.backview:'true';
-        $scope.gotoScreen = function(screen){
+        $scope.goToScreen = function(screen){
             _router.gotoState(screen);
         };
     }]);

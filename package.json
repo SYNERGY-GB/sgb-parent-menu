@@ -1,0 +1,24 @@
+{
+  "name": "sgb-parent-menu",
+  "version": "1.0.0",
+  "description": "Pantalla abstracta para manejo de menú en Megazord",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aaramirez/sgb-parent-menu.git"
+  },
+  "author": "Alexander A. Ramirez M.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aaramirez/sgb-parent-menu/issues"
+  },
+  "homepage": "https://github.com/aaramirez/sgb-parent-menu",
+  "devDependencies": {
+    "browserify": "^9.0.3",
+    "gulp": "^3.8.11",
+    "vinyl-transform": "^1.0.0"
+  }
+}

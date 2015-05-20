@@ -1,7 +1,15 @@
 'use strict';
 
 angular.module('sgb-parent-menu', ['megazord'])
-    .controller('sgb-parent-menu-controller', ['$scope', '_router', '_screenParams', function($scope, _router, _screenParams){
+    .controller('sgb-parent-menu-controller', ['$scope', '$rootScope', '_router', '_screenParams', function ($scope, $rootScope, _router, _screenParams) {
+
+        $rootScope.$on('_dataLoadStarted', function () {
+            console.log('Should start spinner.');
+        });
+
+        $rootScope.$on('_dataLoadFinished', function () {
+            console.log('Should stop spinner.');
+        });
 
         $scope.menu = _screenParams.menu?_screenParams.menu:{};
         $scope.navBarTitle = _screenParams.title?_screenParams.title:'default_menu_title';

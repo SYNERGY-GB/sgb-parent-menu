@@ -7,7 +7,7 @@ angular.module('sgb-parent-menu', ['megazord'])
         $rootScope.$on('_dataLoadStarted', function () {
             console.log('Should start spinner.');
             $ionicLoading.show({
-                template: $translate('loading')
+                template: '<ion-spinner></ion-spinner><div>' + $translate('loading') + '</div>'
             });
         });
 

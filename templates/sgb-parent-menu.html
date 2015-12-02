@@ -20,7 +20,7 @@
         </ion-header-bar>
         <ion-content>
             <div ng-repeat="item in menu">
-                <div class="row" nav-clear menu-close ng-click="gotoScreen(item.screen)">
+                <div class="row" nav-clear menu-close ng-click="gotoScreen(item.screen, item.serviceUrl)">
                     <img ng-if="item.resource"class="col col-20" ng-src="{{item.resource}}"> 
                     <h4 class="col"> {{item.title | translate}} </h4>
                 </div>

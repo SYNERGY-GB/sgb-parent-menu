@@ -1,8 +1,10 @@
 'use strict';
 
 angular.module('sgb-parent-menu', ['megazord'])
-    .controller('sgb-parent-menu-controller', ['$scope', '$rootScope', '$ionicLoading', '$translate', '_router', '_screenParams','$injector','$http',
-        function ($scope, $rootScope, $ionicLoading, $translate, _router, _screenParams, $injector, $http) {
+    .controller('sgb-parent-menu-controller', ['$scope', '_screen','$rootScope', '$ionicLoading', '$translate', '_router', '_screenParams','$injector','$http',
+        function ($scope, _screen ,$rootScope, $ionicLoading, $translate, _router, _screenParams, $injector, $http) {
+
+        _screen.initialize($scope, _screenParams); 
 
         $rootScope.$on('_dataLoadStarted', function () {
             console.log('Should start spinner.');

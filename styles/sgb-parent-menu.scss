@@ -1,8 +1,19 @@
+$linesInItems: 0 !important;
+$backgroundItemColor: #079FF2 !important;
 
 .defaultBarColor {
-  color: royalblue;
+  background-color: white;
 }
 
 .defaultHeaderColor {
-  color: cornflowerblue;
+  background-color: white;
 }
+
+.menu{
+	border:$linesInItems;
+}
+
+.colorSelItem {
+background-color:$backgroundItemColor;
+}
+

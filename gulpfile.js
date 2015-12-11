@@ -1,17 +1,11 @@
 'use strict';
 
 var gulp = require('gulp');
-var browserify = require('browserify');
-var transform = require('vinyl-transform');
+var megazord = require('megazord-sdk');
 
-gulp.task('build', function(){
+//Registers megazord screen development tasks.
+megazord.registerScreenTasks();
 
-    var browserified = transform(function(filename) {
-        var b = browserify(filename);
-        return b.bundle();
-    });
+gulp.tasks = megazord.gulp.tasks;
 
-    return gulp.src('src/sgb-parent-menu.js')
-        .pipe(browserified)
-        .pipe(gulp.dest('./dist/'));
-});
+//You may add additional tasks here using gulp.

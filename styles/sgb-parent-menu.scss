@@ -1,12 +1,14 @@
 $linesInItems: 0 !important;
 $backgroundItemColor: #079FF2 !important;
+$menuHeader: #ECF7F9;
+$appHeader:#ECF7F9;
 
 .defaultBarColor {
-  background-color: white;
+  background-color: $appHeader;
 }
 
 .defaultHeaderColor {
-  background-color: white;
+  background-color: $menuHeader;
 }
 
 .menu{

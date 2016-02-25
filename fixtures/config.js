@@ -1,8 +1,8 @@
 //Screen sample configuration (for development purposes)
 config = {
 	menu: [
-                {title: 'Planes', screen: 'Planes',icon:"icon ion-iphone",selection:false},
-                {title: 'Servicios', screen: 'Servicios',icon:"icon ion-android-laptop",selection:false}
+                {title: 'Planes', screen: 'Planes',icon:"ion-iphone"},
+                {title: 'Servicios', screen: 'Servicios',icon:"ion-android-laptop"}
           ],
-    "selItem":false           
+    "selItem":true           
   };
